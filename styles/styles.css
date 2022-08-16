@@ -1,8 +1,8 @@
 :root {
-    --White: hsl(0, 0%, 100%)
-    --Light-gray: hsl(212, 45%, 89%)
-    --Grayish-blue: hsl(220, 15%, 55%)
-    --Dark-blue: hsl(218, 44%, 22%)
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
 }
 html{
     box-sizing: border-box;
@@ -17,11 +17,46 @@ body{
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
     line-height: 2rem;
+    background-color: var(--light-gray);
 }
 /* Globales */
-.container{
+/* .container{
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-}
+} */
+/* Utilities */
 
+
+.component_container{
+    width: 32rem;
+    height: 50rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    text-align: center;
+    padding: 1.6rem;
+    margin: 8.5rem auto ;
+}
+@media (min-width:1440px){
+    .component_container{
+        margin: 15rem auto;
+    }
+}
+.component_container img{
+    width: 28rem;
+    height: 28rem;
+    border-radius: 1rem;
+}
+.component_container .bold{
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    color: var(--dark-blue);
+}
+.component_container p{
+    color: var(--grayish-blue);
+    line-height: 2rem;
+    padding: 0 1.6rem;
+    margin-bottom: 2.4rem;
+}
