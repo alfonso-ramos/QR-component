@@ -1,5 +1,8 @@
 :root {
-    /* Agrega las fuentes aqui */
+    --White: hsl(0, 0%, 100%)
+    --Light-gray: hsl(212, 45%, 89%)
+    --Grayish-blue: hsl(220, 15%, 55%)
+    --Dark-blue: hsl(218, 44%, 22%)
 }
 html{
     box-sizing: border-box;
@@ -11,8 +14,8 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-family: /*Agrega la fuente de prefenecia*/;
-    font-size: 1.6rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
     line-height: 2rem;
 }
 /* Globales */
@@ -21,13 +24,4 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-/* Utilities */
-.no-margin{
-    margin: 0;
-}
-.no-padding{
-    padding: 0;
-}
-.text-center{
-    text-align: center;
-}
+
